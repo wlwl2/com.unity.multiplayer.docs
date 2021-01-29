@@ -9,7 +9,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import { useThemeConfig } from '@docusaurus/theme-common';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import styles from './styles.module.scss';
+import styles from './styles.module.css';
 
 function FooterLink({
   to,

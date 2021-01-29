@@ -1,5 +1,4 @@
 // Docusaurus v2, see package.json for versions
-//const remarkCustomBlocks = require('remark-custom-blocks');
 module.exports = {
   title: 'Unity Multiplayer Technology',
   tagline: 'MLAPI and MTT Guides',
@@ -198,8 +197,7 @@ module.exports = {
           ]*/
         },
         theme: {
-          customCss: require.resolve('./src/css/unity-custom.scss'),
-          
+          customCss: require.resolve('./src/css/unity-custom.css'),
         },
       },
     ],
@@ -207,7 +205,13 @@ module.exports = {
   plugins: [
     //'@docusaurus/plugin-google-gtag'
       'plugin-image-zoom',
-      'docusaurus-plugin-sass',
-      '@saucelabs/theme-github-codeblock'
+      '@saucelabs/theme-github-codeblock',
+      [
+        '@docusaurus/plugin-client-redirects', 
+        // see https://v2.docusaurus.io/docs/api/plugins/@docusaurus/plugin-client-redirects for examples
+        {
+          fromExtensions: ['html'],
+        },
+      ],
   ],
 };
