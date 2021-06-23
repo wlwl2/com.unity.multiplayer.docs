@@ -10,6 +10,12 @@ module.exports = {
     favicon: 'img/favicon.ico',
     organizationName: 'unity', // Usually your GitHub org/user name.
     projectName: 'docusaurus', // Usually your repo name.
+   
+      i18n: {
+        defaultLocale: 'en',
+        locales: ['en', 'fr'],
+      },
+  
     scripts: [{
       //OneTrust Cookie required by Unity web team
         src: 'https://cdn.cookielaw.org/scripttemplates/otSDKStub.js', 
@@ -68,6 +74,11 @@ module.exports = {
           src: 'img/logo.png',
         },
         items: [
+          {
+            type: 'localeDropdown',
+            position: 'left',
+          },
+ 
           {
             label: 'MLAPI',
             className: 'nav-break',
@@ -546,7 +557,9 @@ module.exports = {
       }],
       [
         '@docusaurus/plugin-client-redirects',
+      
         {
+  
           redirects: [
             {
               to: '/docs/advanced-topics/messaging-system',
@@ -560,7 +573,9 @@ module.exports = {
               to: '/docs/develop/transport-utp/about-transport-utp',
               from: '/docs/transport-utp/about-transport-utp',
             },
-          ]
+          ],
+     
+         
         },
       ],
         'plugin-image-zoom',
