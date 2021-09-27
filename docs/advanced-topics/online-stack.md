@@ -1,4 +1,7 @@
-# The use of online stack
+---
+id: online-stack
+title: OnlineStack
+---
 
 Netcode for GameObjects (later on Netcode) allows you to connect to a host by its IP and port. However, if the host is not on the same network as you (i.e. somewhere over the Internet), you will need some extra services to achieve a successful connection and thus a successful game.
 There are two ways of achieving such a connection : 
