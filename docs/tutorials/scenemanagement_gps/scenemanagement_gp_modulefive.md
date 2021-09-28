@@ -1,6 +1,6 @@
 ---
-id: scenemanagement-gp-one
-title: Netcode Scene Management Golden Path - Module One
+id: scenemanagement-gp-five
+title: Netcode Scene Management Golden Path - Module Five
 ---
 
 :::contribution Special Thanks
